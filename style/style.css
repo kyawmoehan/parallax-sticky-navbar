@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+/* parallax section */
+.parallax {
+    background-image: url("../images/bgi1.jpg");
+    width: 100%;
+    height: 92vh;
+    background-attachment: fixed;
+    background-position: center/center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.parallax-two{
+    background-image: url("../images/bgi2.jpg");
+   height: 400px;
+   background-position: bottom;
+}
+
+.text {
+    font-size: 50px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    opacity: 0.7;
+    border-radius: 0 20px 0 20px;
+}
+
+
+
+/* nav bar */
+/* Style the navbar */
+#navbar-sticky {
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 60px;
+}
+
+/* responsive for small screen */
+@media(max-width:560px) {}
